@@ -39,6 +39,7 @@ body {
   overflow: hidden;
   background-color: var(--clr-background-card);
 
+
   &__image {
     width: 100%;
     height: 100%;
@@ -64,6 +65,7 @@ body {
     align-items: center;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 0 1em;
 
     margin-bottom: var(--space-footer-bottom);
   }
@@ -108,14 +110,18 @@ body {
   }
 }
 
-// /*----------------
-//     Mobile active
-// -----------------
-// */
+/*----------------
+  Mobile active
+----------------- */
 
 .card {
+  position: relative; 
+
   &__footer--mobile-active {
-    grid-gap: 1.5em;
+    position: absolute;
+    bottom:  calc(var(--social-links-height) * -1);
+    transition: bottom ease-in-out 300ms;
+
     grid-template-rows: 1fr;
 
     background-color: var(--clr-heading);
@@ -127,6 +133,9 @@ body {
 
   &__share {
     grid-column: 1 / 2;
+
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
   }
 
   &__social-links {
