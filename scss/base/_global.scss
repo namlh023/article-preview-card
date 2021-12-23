@@ -10,7 +10,7 @@
 body {
   font-family: var(--ff-primary);
   font-size: 1rem;
-  
+
   background-color: var(--clr-background);
 
   display: flex;
@@ -124,6 +124,7 @@ body {
     transition: bottom ease-in-out 300ms;
 
     grid-template-rows: 1fr;
+    grid-gap: 1em;
 
     background-color: var(--clr-heading);
 
@@ -167,8 +168,7 @@ body {
 
     position: absolute;
     bottom: 30%;
-    right: 0;
-    margin-right: -50%;
+    right: -7%;
 
     grid-template-rows: 1fr;
 
