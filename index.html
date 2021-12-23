@@ -53,8 +53,14 @@
         />
       </div>
 
-      <!-- This is footer when active on mobile -->
-      <div class="card__footer card__footer--mobile-active js-footer-mobile-active container">
+      <!-- Footer when active on mobile -->
+      <div
+        class="
+          card__footer card__footer--mobile-active
+          js-footer-mobile-active
+          container
+        "
+      >
         <p class="card__share p-like">Share</p>
         <ul class="card__social-links">
           <li class="card__social-link">
@@ -74,13 +80,42 @@
           </li>
         </ul>
         <img
-          class="card__share-icon card__share-icon--mobile-active js-share-icon-mobile-active"
+          class="
+            card__share-icon card__share-icon--mobile-active
+            js-share-icon-mobile-active
+          "
           src="./images/icon-share.svg"
           alt=""
           aria-hidden="true"
         />
       </div>
+
+      <!-- Footer when active on desktop -->
+      <div
+        class="card__footer--desktop-active js-footer-desktop-active container"
+      >
+        <p class="card__share p-like">Share</p>
+        <ul class="card__social-links">
+          <li class="card__social-link">
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="" aria-hidden="true"
+            /></a>
+          </li>
+          <li class="card__social-link">
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="" aria-hidden="true"
+            /></a>
+          </li>
+          <li class="card__social-link">
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="" aria-hidden="true"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
     </main>
-    <script src='./js/index.js'></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
